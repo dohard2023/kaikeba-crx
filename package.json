@@ -3,8 +3,10 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"scripts": {
-		"dev": "tsc -w",
-		"build": "tsc && node ./dist/scripts/merge.js"
+		"dev:crx": "tsc -w -m es2020",
+		"dev:script": "tsc -w ",
+		"build:crx": "tsc -m es2020",
+		"build:script": "tsc"
 	},
 	"devDependencies": {},
 	"dependencies": {
