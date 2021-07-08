@@ -1,6 +1,14 @@
+export interface IFragment {
+	title: string;
+	timestamp: number;
+}
+
 export interface IMenus {
-	[id: string]: {
-		title: string;
-		timestamp: number;
-	}[]
+	[id: string]: IFragment[];
+}
+
+export interface IResourceItem {
+	id: string,
+	filepath?: string;
+	fragments: IFragment[]
 }

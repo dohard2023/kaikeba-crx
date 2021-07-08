@@ -2,7 +2,7 @@ import { IMenus } from '../inetrface';
 
 const POLLING_TIME = 60 * 60 * 1000; // 一小时
 
-const SOURCE_URL = `https://cdn.jsdelivr.net/gh/MaShizhen/kaikeba-crx/videos/test.json`;
+const SOURCE_URL = `https://cdn.jsdelivr.net/gh/MaShizhen/kaikeba-crx/main.json`;
 
 let video = null as HTMLVideoElement;
 let menus_container = null as HTMLDivElement;
@@ -56,9 +56,10 @@ const render_menus = (menus: IMenus) => {
 	clear_menus();
 
 	const id = window.location.href.match(/([^\/]+)$/)[0];
-	const current_menus = menus[id];
-	if (current_menus) {
-		current_menus.forEach((item) => {
+	// 获取到片段
+	const fragments = menus[id];
+	if (fragments) {
+		fragments.forEach((item) => {
 			const li = document.createElement('li');
 			li.setAttribute(menus_container.attributes[0].name, '');
 			li.innerText = item.title;

@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"scripts": {
-		"test": "tsc -w",
-		"build": ""
+		"dev": "tsc -w",
+		"build": "tsc && node ./dist/scripts/merge.js"
 	},
 	"devDependencies": {},
 	"dependencies": {
