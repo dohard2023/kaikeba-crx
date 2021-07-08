@@ -1,4 +1,5 @@
 /node_modules/
 tasks/**/*.js
+dist/
 index.js
 index.d.ts
