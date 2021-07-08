@@ -1,0 +1,17 @@
+{
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.tabCompletion": "on",
+	"editor.wordWrap": "on",
+	"editor.detectIndentation": false,
+	"editor.fontLigatures": true,
+	"editor.renderWhitespace": "all",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.tslint": true
+	},
+	"files.trimTrailingWhitespace": true,
+	"editor.renderControlCharacters": true,
+	"git.confirmSync": false,
+	"files.autoSave": "onFocusChange",
+	"editor.formatOnType": true,
+	"editor.formatOnSave": true,
+}

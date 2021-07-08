@@ -17,10 +17,10 @@
 				"https://learn.kaikeba.com/*"
 			],
 			"js": [
-				"js/content.js"
+				"dist/crx/content.js"
 			]
 		}
 	],
 	"manifest_version": 2,
-    "author": "https://github.com/MaShizhen"
+	"author": "https://github.com/MaShizhen"
 }

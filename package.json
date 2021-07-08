@@ -2,7 +2,14 @@
 	"name": "kaikeba-crx",
 	"version": "1.0.0",
 	"license": "MIT",
-	"scripts": {},
+	"scripts": {
+		"test": "tsc -w",
+		"build": ""
+	},
 	"devDependencies": {},
-	"dependencies": {}
+	"dependencies": {
+		"@types/node": "^16.0.1",
+		"tslint": "^6.1.3",
+		"typescript": "^4.3.5"
+	}
 }

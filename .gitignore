@@ -1,0 +1,4 @@
+/node_modules/
+tasks/**/*.js
+index.js
+index.d.ts
