@@ -6,7 +6,8 @@
 		"dev:crx": "tsc -w -m es2020",
 		"dev:script": "tsc -w ",
 		"build:crx": "tsc -m es2020",
-		"build:script": "tsc"
+		"build:script": "tsc",
+		"generate": "tsc && node ./dist/scripts/merge.js"
 	},
 	"devDependencies": {},
 	"dependencies": {
