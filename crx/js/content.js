@@ -1,6 +1,6 @@
 const POLLING_TIME = 60 * 60 * 1000; // 一小时
 
-const SOURCE_URL = `https://cdn.jsdelivr.net/gh/MaShizhen/kaikeba-crx@1.0/videos/test.json`
+const SOURCE_URL = `https://cdn.jsdelivr.net/gh/MaShizhen/kaikeba-crx/videos/test.json`
 
 let video = null
 let menus_container = null
