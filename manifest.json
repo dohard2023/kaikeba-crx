@@ -8,9 +8,15 @@
 		"128": "img/icon.png"
 	},
 	"permissions": [
-		"webRequest"
+		"webRequest",
+		"clipboardWrite"
 	],
 	"homepage_url": "https://github.com/MaShizhen/kaikeba-crx",
+	"background": {
+		"scripts": [
+			"dist/crx/launch.js"
+		]
+	},
 	"content_scripts": [
 		{
 			"matches": [

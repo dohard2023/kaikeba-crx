@@ -43,5 +43,3 @@ menus.every((item) => {
 })
 
 fs.writeFileSync(path.join(__dirname, '../../main.json'), JSON.stringify(res, null, '\t'))
-
-

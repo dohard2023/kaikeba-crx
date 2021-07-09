@@ -1,13 +1,11 @@
 {
 	"include": [
-		"./src/**/*.ts",
-		"./src/**/*.json"
+		"./src/**/*.ts"
 	],
 	"exclude": [
 		"./dist/"
 	],
 	"compilerOptions": {
-		"module": "CommonJS",
 		"target": "esnext",
 		"preserveWatchOutput": true,
 		"noImplicitAny": true,
@@ -67,7 +65,8 @@
 		"traceResolution": false,
 		"typeRoots": [],
 		"types": [
-			"node"
+			"node",
+			"chrome"
 		],
 		"watch": false
 	}

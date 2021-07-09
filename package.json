@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"scripts": {
-		"dev:crx": "tsc -w -m es2020",
+		"dev": "tsc -w -m es2020",
 		"dev:script": "tsc -w ",
 		"build:crx": "tsc -m es2020",
 		"build:script": "tsc",
@@ -11,6 +11,7 @@
 	},
 	"devDependencies": {},
 	"dependencies": {
+		"@types/chrome": "^0.0.146",
 		"@types/node": "^16.0.1",
 		"tslint": "^6.1.3",
 		"typescript": "^4.3.5"
