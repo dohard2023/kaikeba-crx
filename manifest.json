@@ -1,32 +1,25 @@
 {
-	"name": "开课吧-视频片段插件",
-	"version": "1.0.0",
-	"description": "开课吧-视频片段插件",
-	"icons": {
-		"16": "img/icon.png",
-		"48": "img/icon.png",
-		"128": "img/icon.png"
-	},
-	"permissions": [
-		"webRequest",
-		"clipboardWrite"
-	],
-	"homepage_url": "https://github.com/MaShizhen/kaikeba-crx",
-	"background": {
-		"scripts": [
-			"dist/crx/launch.js"
-		]
-	},
-	"content_scripts": [
-		{
-			"matches": [
-				"https://learn.kaikeba.com/*"
-			],
-			"js": [
-				"dist/crx/content.js"
-			]
-		}
-	],
-	"manifest_version": 2,
-	"author": "https://github.com/MaShizhen"
+  "name": "多语言",
+  "version": "1.0.0",
+  "description": "",
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "permissions": ["webRequest", "cookies", "clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["http://multilingual-translation-system-dev.songmao.tech/*"],
+      "js": ["dist/crx/content.js"]
+    }
+  ],
+  "host_permissions": [
+    "http://multilingual-translation-system-dev.songmao.tech/*"
+  ],
+  "background": {
+    "service_worker": "dist/crx/launch.js"
+  },
+  "manifest_version": 3,
+  "author": "https://github.com/MaShizhen"
 }
